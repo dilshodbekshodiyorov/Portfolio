@@ -1,0 +1,51 @@
+
+.contact{
+    padding-top: 141px;
+}
+
+
+.contact h1{
+   font-weight: bold;
+    color: rgba(71, 67, 6, 0.498);
+    font-size: 100px;
+}
+
+.contact-us {
+    display: flex;
+    padding-top: 45px;
+}
+
+.contact-us img {
+    width: 404px;
+    height: 313px;
+    border-radius: 50%;
+    border: 2px solid black;
+      box-shadow: 10px 10px 5px rgb(162, 166, 112);
+}
+
+
+
+.contact-info ul {
+    list-style: none;
+    margin-left: 50px;
+}
+
+.contact-info ul li {
+     color: rgba(3, 4, 94, 1);
+    font-size: 24px;
+    line-height: 38px;
+}
+.contact-info ul a {
+    text-decoration: none;
+}
+
+.footer-content{
+    text-align: center;
+    padding: 50px 0;
+    color: #555;
+    font-size: 1rem;
+}
+.signature{
+    margin-top: 10px;
+    font-weight: 600;
+}

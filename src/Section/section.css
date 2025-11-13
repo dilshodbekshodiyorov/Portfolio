@@ -1,0 +1,124 @@
+.about-me {
+    margin-top: 171px;
+}
+
+.about-me h1 {
+    font-weight: bold;
+    color: rgba(71, 67, 6, 0.498);
+    font-size: 100px;
+}
+
+.about-me p {
+    color: rgba(3, 4, 94, 1);
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0%;
+}
+
+
+.information {
+    padding-top: 75px;
+    margin-left: 275px;
+}
+
+.first-info h4 {
+    color: rgba(3, 4, 94, 1);
+    font-size: 27px;
+    line-height: 40px;
+}
+
+.first-info p {
+    color: rgba(3, 4, 94, 1);
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.second-info h4 {
+    color: rgba(3, 4, 94, 1);
+    font-size: 27px;
+    line-height: 40px;
+}
+
+.second-info p {
+    color: rgba(3, 4, 94, 1);
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.third-info h4 {
+    color: rgba(3, 4, 94, 1);
+    font-size: 27px;
+    line-height: 40px;
+}
+
+.third-info p {
+    color: rgba(3, 4, 94, 1);
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.work {
+    padding-top: 171px;
+}
+
+.work h1 {
+    font-weight: bold;
+    color: rgba(71, 67, 6, 0.498);
+    font-size: 100px;
+}
+
+.work p {
+    color: rgba(3, 4, 94, 1);
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0%;
+}
+
+.section-images {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 75px;
+}
+
+.first-photo img {
+    width: 400px;
+    height: 300px;
+    border-radius: 35px;
+    border: 2px solid black;
+    box-shadow: 10px 10px 5px rgb(162, 166, 112);;
+
+}
+
+.second-photo img {
+    width: 400px;
+    height: 300px;
+    border-radius: 35px;
+    border: 2px solid black;
+    box-shadow: 10px 10px 5px rgb(162, 166, 112);
+}
+
+.first-photo h4 {
+    color: rgba(3, 4, 94, 1);
+    font-size: 27px;
+    line-height: 40px;
+}
+
+.first-photo p {
+    color: rgba(3, 4, 94, 1);
+    font-size: 20px;
+    line-height: 34px;
+    letter-spacing: 0%;
+}
+
+.second-photo h4 {
+     color: rgba(3, 4, 94, 1);
+    font-size: 27px;
+    line-height: 40px;
+}
+
+.second-photo p {
+     color: rgba(3, 4, 94, 1);
+    font-size: 20px;
+    line-height: 34px;
+    letter-spacing: 0%;
+}
