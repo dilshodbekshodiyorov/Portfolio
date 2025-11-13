@@ -19,7 +19,7 @@ function footer() {
                         <a href="mailto:shodiyorovdilshodbek00@gmail.com">shodiyorovdilshodbek00@gmail.com</a>
                     </li>
                     <li>
-                        <a href="@Shodiyorov_Dilshodbek">Telegram</a>
+                        <a href="https://t.me/Shodiyorov_Dilshodbek">Telegram</a>
                     </li>
                     <li>
                         <a href="https://www.linkedin.com/in/dilshodbek-shodiyorov-a7199432b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a>
