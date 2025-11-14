@@ -24,6 +24,8 @@ html{
     justify-content: space-between;
     margin-top: 33px;
     width: 100%;
+    padding: 0;
+    margin-top: 20px;
 
 }
 
@@ -40,6 +42,10 @@ html{
     display: flex;
     gap: 35px;
     padding: 0
+}
+
+.header ul li {
+    margin: 8px 0;
 }
 
 
@@ -60,6 +66,10 @@ html{
 .title {
     margin-top: 250px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
     
 }
 
@@ -101,6 +111,8 @@ border: 1px solid black;
 border-radius: 50%;
 overflow: hidden;
 margin-left: 400px;
+order: 1;
+
 }
 
 .profile-photo{
@@ -141,5 +153,37 @@ font-size: 40px;
     height: 90%;
     color: rgba(71, 67, 6, 1);
     border-radius: 50%;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    /* 1. ASOSIY QISM: .title ni vertikalga o'tkazamiz */
+    .title {
+        flex-direction: column; /* Rasm va Matnni ustma-ust qo'yish */
+        align-items: center;
+        padding-top: 30px; 
+    }
+    
+    /* 2. RASM JOYLAShUVI (400px marginni bekor qilish) */
+    .profile-container {
+        order: 1; /* Rasmni tepaga chiqarish */
+        margin-left: auto !important; /* Katta ekrandagi 400px ni bekor qilish */
+        margin: 30px auto; /* Markazga joylash */
+        
+        width: 75vw !important; /* Telefon ekraniga moslash */
+        height: 75vw !important; 
+        position: relative !important; 
+    }
+    
+    /* 3. MATN JOYLAShUVI */
+    .info { 
+        order: 2; /* Matnni rasm ostiga tushirish */
+        text-align: center;
+        width: 100%;
+        padding: 0 15px; 
+    }
+    
+    /* ... qolgan navigatsiya tuzatishlari ... */
 }
 
