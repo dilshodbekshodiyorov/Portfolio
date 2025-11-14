@@ -1,13 +1,19 @@
 import './header.css'
+import { useState } from 'react'
 
 function header() {
+  const [isMenuOpen , setIsMenuOpen] = useState(false)
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen)
+  }
   return (
     <div className='container'>
       <div className='header'>
         <h3>
           Shodiyorov Dilshodbek
         </h3>
-        <ul>
+        <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
           <li>
             <a href="#">Home</a>
           </li>
@@ -26,6 +32,11 @@ function header() {
           <img src="./logo.png" alt="" />
           <img src="./twit.png" alt="" />
         </div>
+        <button className={`burger-menu $ {isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </button>
 
       </div>
 

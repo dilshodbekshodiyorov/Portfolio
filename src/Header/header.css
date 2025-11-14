@@ -187,3 +187,139 @@ font-size: 40px;
     /* ... qolgan navigatsiya tuzatishlari ... */
 }
 
+
+/* header.css faylining Boshlang'ich qismida */
+
+/* Navigatsiya menyusiga asosiy sinf berish */
+.nav-menu {
+    list-style: none; /* Nuqtalarni olib tashlash */
+    display: flex; /* Havolalarni yonma-yon qo'yish */
+    /* ... qolgan stillar ... */
+}
+
+/* Burger tugmasini yashirish */
+.burger-menu {
+    display: none; 
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    z-index: 1000; /* Boshqa elementlar ustida turishi uchun */
+}
+
+/* Burger tugmasi chiziqlari */
+.burger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333; /* Sizning rang kodingiz */
+    margin: 5px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* ======================================================= */
+/* !!! YAKUNIY MOBIL MOSLASHUV (max-width: 768px) !!! */
+/* Oldingi barcha media query stillarini bu blok bilan almashtiring. */
+/* ======================================================= */
+
+@media screen and (max-width: 768px) {
+    
+    /* 1. CONTAINER: Chekkalardan bo'shliq qoldirish */
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    /* 2. HEADER: Navigatsiya ustida turishi, Ism va Burger tugmasini yonma-yon joylashtirish */
+    .header {
+        position: relative; 
+        z-index: 1001; /* Menyudan ustida turishi shart */
+        display: flex; /* Ism va Burgerni yonma-yon qo'yish */
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0; 
+    }
+
+    /* 3. .logo (Ikonkalar) ni menyu ochiq turganda yashirish */
+    .logo {
+        display: none; 
+    }
+    
+    /* 4. ASOSIY QISM: .title (Matn va Rasmni o'rab turuvchi div) */
+    .title {
+        flex-direction: column; /* Matn va Rasmni ustma-ust qo'yish */
+        align-items: center;
+        padding-top: 30px; 
+    }
+    
+    /* 5. RASM JOYLAShUVI (.profile-container) */
+    .profile-container {
+        order: 1; /* Rasmni matndan yuqoriga chiqarish */
+        
+        /* 400px marginni bekor qilish va markazga joylash */
+        margin-left: auto !important; 
+        margin: 30px auto; 
+        
+        /* O'lchamni mobilga moslash (75% viewport width) */
+        width: 75vw !important; 
+        height: 75vw !important; 
+        position: relative !important; 
+    }
+    
+    /* 6. MATN JOYLAShUVI (.info) */
+    .info { 
+        order: 2; /* Matnni rasm ostiga tushirish */
+        text-align: center;
+        width: 100%;
+        padding: 0 15px; 
+    }
+    
+    /* 7. BURGER TUGMASINI KO'RSATISH */
+    .burger-menu {
+        display: block; 
+    }
+    
+    /* 8. NAVIGATSIYA RO'YXATINI YASHIRISH VA STILLASH */
+    .nav-menu {
+        display: flex; 
+        flex-direction: column; 
+        
+        position: fixed; /* Ekranda qimirlamay turishi uchun MUHIM */
+        top: 60px; /* Header balandligidan pastdan boshlash */
+        right: -100%; /* Ekrandan tashqariga surib yashirish */
+        
+        width: 70px; 
+        min-height: auto; 
+        
+        background-color: rgb(183, 223, 146); 
+        padding: 10px 0;
+        z-index: 1000; /* Header'dan pastroq turishi */
+        transition: all 0.9s ease-in-out;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* 9. MENYU OCHILGAN HOLATI */
+    .nav-menu.active {
+        right: 0; 
+        display: flex;
+        position: absolute;
+        top: 60px;
+        width: 70px;
+        box-shadow: 0 5px 10px rgba( 0, 0, 0, 0,2);
+        border-radius: 10px;
+    }
+    
+    /* 10. MENYU HAVOLALARIGA RANG VA JOYLAShUV BERISH */
+    .nav-menu li {
+        width: 100%;
+        text-align: center; 
+        margin: 10px 0;
+    }
+    .nav-menu li a {
+        display: block; 
+        color: #333 !important; 
+        text-decoration: none; 
+        padding: 10px 0;
+        font-size: 1.1rem; 
+    }
+}
