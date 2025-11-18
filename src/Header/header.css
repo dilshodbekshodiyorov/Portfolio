@@ -13,6 +13,10 @@ html{
     max-width: 1150px;
     height: auto;
     margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
  
 }
 
@@ -22,10 +26,9 @@ html{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 33px;
     width: 100%;
     padding: 0;
-    margin-top: 20px;
+    margin-top: 10px;
 
 }
 
@@ -80,15 +83,15 @@ html{
 }
 
 .title h3 span {
-    font-size: 85px;
-    line-height: 116px;
+    font-size: 75px;
+    line-height: 100px;
     letter-spacing: 0%;
 }
 
 .resume-btn {
     background-color:rgba(245, 238, 132, 1) ;
     color: rgba(71, 67, 6, 1);
-    margin-top: 37px;
+    margin-top: 23px;
     padding: 12px 34px;
     font-size: 20px;
     border-radius: 8px;
@@ -288,10 +291,10 @@ font-size: 40px;
         top: 60px; /* Header balandligidan pastdan boshlash */
         right: -100%; /* Ekrandan tashqariga surib yashirish */
         
-        width: 70px; 
+        width: 100%; 
         min-height: auto; 
         
-        background-color: rgb(183, 223, 146); 
+        background-color: rgb(255, 255, 255); 
         padding: 10px 0;
         z-index: 1000; /* Header'dan pastroq turishi */
         transition: all 0.9s ease-in-out;
@@ -304,7 +307,7 @@ font-size: 40px;
         display: flex;
         position: absolute;
         top: 60px;
-        width: 70px;
+        width: 100%;
         box-shadow: 0 5px 10px rgba( 0, 0, 0, 0,2);
         border-radius: 10px;
     }
