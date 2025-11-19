@@ -27,7 +27,8 @@
 
 .contact-info ul {
     list-style: none;
-    margin-left: 50px;
+     margin-left: 50px;
+    
 }
 
 .contact-info ul li {
@@ -53,13 +54,28 @@
 
 @media  screen and (max-width: 768px) {
     .contact-us {
+        display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
+        margin-left: 0 !important;
+        width: 100%;
     }
 
-    .contact-info ul  {
-       margin-left: 0 !important;
+    .contact-info  ul {
+       padding-left: 0 !important;
        text-align: center;
+       align-items: center;
+
+    }
+
+    .contact-info ul li {
+        text-align: center !important;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contact {
+        padding-top: 0 !important;
     }
 }

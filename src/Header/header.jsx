@@ -45,7 +45,7 @@ function header() {
           <h3>
             Hello, I’m Dilshod, <br /> <span>Frontend <br /> Developer</span> <br /> basen in Uzbekistan
           </h3>
-          <button className='resume-btn'><a href="https://drive.google.com/file/d/145v71VSNShmITV0XQgv5KPgcsTvKXvP-/view?usp=drivesdk">Resume</a></button>
+          <button className='resume-btn'><a href="https://drive.google.com/file/d/14JdsynHwKx_43yiir_MxHEqJYrMxiLr5/view?usp=drivesdk">Resume</a></button>
         </div>
 
         <div className="profile-container">
